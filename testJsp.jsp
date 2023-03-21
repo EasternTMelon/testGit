@@ -42,6 +42,16 @@
 <script type="text/javascript">
 	function TEST_1000() {
 		var buttons = {
+			//測試方法
+			doAdd: function () {
+				ajaxRequest.post('test', {
+					'info': JSON.stringify(actions.getReqMap())
+				}, function (resp) {
+					actions.resetCtrlStatus();
+					alert('新增成功');
+					actions.doQuery();
+				});
+			},
 			//新增
 			doAdd : function() {
 				//清空檢核
