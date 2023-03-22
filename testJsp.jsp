@@ -51,6 +51,7 @@
 					alert('新增成功');
 					console.log('test');
 					console.log('test');
+					console.log('test123');
 					actions.doQuery();
 				});
 			},
