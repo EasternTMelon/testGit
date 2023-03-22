@@ -49,6 +49,7 @@
 				}, function (resp) {
 					actions.resetCtrlStatus();
 					alert('新增成功');
+					console.log('test');
 					actions.doQuery();
 				});
 			},
